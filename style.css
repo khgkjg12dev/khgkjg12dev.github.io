@@ -99,11 +99,12 @@ body {
   align-items: flex-start;
 }
 
+/* 스토어 아이콘은 투명한 여백 없이 꽉 찬 정사각형이라 모서리는 여기서 둥글린다(Play 모양과 비슷하게 20%) */
 .app-card img {
   width: 72px;
   height: 72px;
   flex: 0 0 auto;
-  border-radius: 16px;
+  border-radius: 20%;
 }
 
 .app-card h2 {
