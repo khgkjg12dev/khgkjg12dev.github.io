@@ -135,6 +135,12 @@ body {
   background: var(--brick-dark);
 }
 
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .links {
   margin: 0;
   padding: 0;
