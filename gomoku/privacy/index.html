@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>오목판 개인정보처리방침 | khgkjg12dev</title>
-    <meta name="description" content="오목판 앱의 개인정보처리방침(시행일 2026년 10월 28일). 한국어·English." />
+    <meta name="description" content="오목판 앱의 개인정보처리방침(시행일 2026년 11월 10일). 한국어·English." />
     <link rel="icon" href="/assets/gomoku-icon.png" />
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -35,7 +35,7 @@
 
 <section id="ko" lang="ko">
 <h1>오목판 개인정보처리방침</h1>
-<p>시행일: 2026년 10월 28일</p>
+<p>시행일: 2026년 11월 10일</p>
 <p>khgkjg12(이하 "개발자")은 Android·iOS 앱 "오목판"(이하 "앱") 이용자의 개인정보를 소중히 다룹니다. 이 방침은 앱이 어떤 정보를 어떻게 처리하는지 설명합니다.</p>
 
 <h2>1. 온라인 모드와 오프라인 모드</h2>
@@ -55,7 +55,7 @@
   <tr><td>Apple 로그인 토큰 (iOS·Android·웹, 암호화 보관)</td><td>Apple 로그인 시</td><td>계정 삭제 시 Apple에 로그인 연결 해제(토큰 폐기)를 요청하기 위해서만 사용</td></tr>
   <tr><td>닉네임</td><td>이용자가 직접 입력</td><td>게임방 목록, 대국 화면, 프로필에 표시</td></tr>
   <tr><td>게임 기록 (착수 좌표, 대국 결과, 일시)</td><td>온라인 대국 시 (온라인 A.I. 대국 포함)</td><td>대국 진행, 전적 제공, 복기 제공</td></tr>
-  <tr><td>레이팅 기록 (대국별 실력 점수 변화, 시즌 기록)</td><td>15초 대국(사람·온라인 인공지능)이 끝날 때, 시즌이 끝날 때</td><td>랭킹·실력 점수 제공</td></tr>
+  <tr><td>레이팅 기록 (대국별 실력 점수 변화, 시즌 기록, 시즌 보상)</td><td>15초 대국(사람·온라인 인공지능)이 끝날 때, 시즌이 끝날 때</td><td>랭킹·실력 점수 제공, 시즌 기록·시즌 보상 표시</td></tr>
   <tr><td>로그인 토큰</td><td>로그인 시</td><td>로그인 상태 유지</td></tr>
   <tr><td>이용약관 동의 기록</td><td>약관 동의 시</td><td>동의 확인</td></tr>
   <tr><td>차단 목록</td><td>이용자가 다른 이용자를 차단할 때</td><td>차단한 이용자의 방 숨김·입장 제한</td></tr>
@@ -64,8 +64,15 @@
 <ul>
   <li><strong>이메일 주소와 비밀번호는 저장하지 않습니다.</strong> 로그인은 Google 계정(Android·iOS·웹) 또는 Apple 계정(iOS·Android·웹)으로만 이루어집니다. 로그인할 때 앱은 Google 또는 Apple이 발급한 로그인 토큰(ID 토큰)을 본 서비스 서버로 보내며, 이 토큰에는 그 계정의 이메일 주소·이름·프로필 사진 주소가 들어 있을 수 있습니다. 서버는 토큰이 진짜인지 확인한 뒤 그 안의 계정 식별자만 저장하고, 이메일 주소·이름·프로필 사진 주소는 사용하거나 저장하지 않으며 확인이 끝나면 토큰을 버립니다. 계정 식별자에는 이메일 주소나 이름이 포함되어 있지 않습니다.</li>
   <li><strong>Apple 로그인(iOS·Android·웹):</strong> Apple 계정과 Google 계정은 처음에는 서로 다른 계정으로 만들어집니다(아래 "로그인 연결·계정 합치기"). Apple 로그인 시 앱이 받은 1회용 인증 코드를 서버가 Apple 서버에서 로그인 토큰으로 교환해 암호화하여 보관합니다. 이 토큰은 이용자가 계정을 삭제할 때 Apple에 "이 앱과의 로그인 연결 해제"(토큰 폐기)를 요청하는 데에만 사용하며, 다른 용도로 사용하거나 조회하지 않습니다. Apple의 "이메일 가리기"를 사용한 경우에도 서버는 중계 이메일 주소를 저장하지 않습니다. Android에서는 Apple 로그인 화면을 브라우저 창으로 엽니다. Apple이 로그인 결과(1회용 인증 코드와 로그인 토큰)를 본 서비스 서버로 보내면, 서버는 이를 최대 3분 동안만 보관했다가 앱에 넘기고 지웁니다.</li>
-  <li><strong>로그인 연결·계정 합치기:</strong> 한 계정에 Google 로그인과 Apple 로그인을 함께 연결할 수 있습니다. 연결하면 그 로그인의 계정 식별자를 이 계정에 저장합니다. 같은 이용자가 두 계정을 갖고 있으면, 이용자의 요청으로 두 계정을 하나로 합칠 수 있습니다. 합치면 다른 계정의 대국 기록·신고·차단 기록과 로그인 수단을 남는 계정으로 옮기고, 다른 계정(닉네임 포함)은 즉시 삭제합니다. 합치기는 되돌릴 수 없습니다. 합친 뒤에는 다른 이용자의 대국 기록에서 상대가 남는 계정의 닉네임으로 표시됩니다.</li>
-  <li><strong>랭킹:</strong> 온라인 대국 랭킹에 닉네임, 레이팅(실력 점수), 등급, 순위, 시즌 승률(흑·백 각각의 승률 포함)과 판 수, 온라인 인공지능 대국 승률이 다른 이용자에게 보입니다. 랭킹은 3개월 시즌마다 새로 시작하고, 지난 시즌의 최종 순위는 기록으로 남습니다. 이용 정지 중에는 랭킹에 보이지 않으며, 계정을 삭제하면 랭킹·레이팅 기록·시즌 기록에서 사라집니다(상대방의 레이팅은 바뀌지 않습니다).</li>
+  <li><strong>로그인 연결·계정 합치기:</strong> 한 계정에 Google 로그인과 Apple 로그인을 함께 연결할 수 있습니다. 연결하면 그 로그인의 계정 식별자를 이 계정에 저장합니다. 연결하려는 로그인으로 로그인만 하고 약관에 동의하지 않은 계정이 있으면, 그 계정을 바로 삭제하고 로그인을 이 계정에 연결합니다. 같은 이용자가 두 계정을 갖고 있으면, 이용자의 요청으로 두 계정을 하나로 합칠 수 있습니다. 합치면 다른 계정의 대국 기록·신고·차단 기록, 시즌 보상, 남는 계정에 없는 시즌의 시즌 기록과 로그인 수단을 남는 계정으로 옮기고, 다른 계정(닉네임 포함)은 즉시 삭제합니다. 같은 시즌의 시즌 보상이 두 계정에 모두 있으면 하나만 남깁니다. 합치기는 되돌릴 수 없습니다. 합친 뒤에는 다른 이용자의 대국 기록에서 상대가 남는 계정의 닉네임으로 표시됩니다.</li>
+  <li><strong>랭킹과 시즌 기록:</strong> 랭킹은 3개월 시즌마다 새로 시작합니다. 시즌이 끝나면 그 시즌의 최종 등급·레이팅·순위를 시즌 기록으로 남기고, 최종 등급과 레이팅 순위에 따라 배지·테두리 같은 표시 보상을 줍니다(유료 상품·아이템 아님). 다른 이용자에게는 다음이 보입니다.
+    <ul>
+      <li>랭킹(순위표, 이번 시즌·지난 시즌): 닉네임, 레이팅(실력 점수), 등급, 순위, 시즌 승률(흑·백 각각의 승률 포함)과 판 수, 온라인 인공지능 대국 승률</li>
+      <li>방 목록: 방장의 레이팅과 등급(시즌 배치 중이면 배치 중 표시)</li>
+      <li>프로필: 전적, 이번 시즌 레이팅·등급·순위·상위 몇 %, 끝난 시즌마다의 시즌 기록(최종 등급·레이팅·순위·상위 몇 %, 판 수, 최고 레이팅, 승률 순위와 승률, 온라인 인공지능 승률 순위와 승률)</li>
+      <li>시즌 보상: 바로 앞 시즌에 받은 배지·테두리가 프로필·방 목록·랭킹에 보이고, 프로필에는 그 시즌 순위와 순위가 붙은 사람 수가 함께 보입니다. 더 전 시즌의 보상은 프로필의 시즌 기록에 보입니다.</li>
+    </ul>
+    이용 정지 중에는 랭킹(이번 시즌·지난 시즌)에 보이지 않고, 프로필의 이번 시즌 값·지난 시즌 기록·시즌 보상은 본인에게만 보입니다. 시즌이 끝날 때 시즌 배치 중이거나 이용 정지 중이면 그 시즌의 순위와 보상은 없습니다. 계정을 삭제하면 랭킹·레이팅 기록·시즌 기록·시즌 보상에서 사라집니다(상대방의 레이팅은 바뀌지 않습니다).</li>
   <li><strong>서버로 보내는 앱 정보:</strong> 온라인 모드에서 앱은 앱 종류와 빌드 번호(android/빌드 번호 또는 ios/빌드 번호)를 서버로 보냅니다. 앱 버전이 서버와 맞는지 확인하고 업데이트를 안내하는 데 쓰며, 기기 모델·기기 식별자·광고 ID는 보내지 않습니다.</li>
   <li>닉네임은 이용자가 직접 입력하며, Google·Apple 계정의 이름을 가져오지 않습니다.</li>
   <li>빠른 채팅(대기실, 대국 중, 대국이 끝난 직후 잠시)은 정해진 문구 중 하나를 고르는 방식이며, 선택한 문구는 서버를 거쳐 상대에게 전달만 되고 서버에 저장·기록되지 않습니다.</li>
@@ -77,7 +84,7 @@
   <tr><th>항목</th><th>보관 기간</th></tr>
   <tr><td>계정 정보(계정 식별자, 닉네임)</td><td>이용자가 계정을 삭제할 때까지</td></tr>
   <tr><td>Apple 로그인 토큰 (iOS·Android·웹, 암호화 보관)</td><td>이용자가 계정을 삭제할 때까지 (계정 삭제 시 Apple에 폐기를 요청한 뒤 삭제)</td></tr>
-  <tr><td>닉네임을 한 번도 정하지 않은 계정</td><td>생성 후 24시간 (이후 자동 삭제)</td></tr>
+  <tr><td>닉네임을 한 번도 정하지 않은 계정</td><td>생성 후 24시간 (이후 자동 삭제). 로그인만 하고 약관에 동의하지 않은 계정은 그 전이라도 다음 경우 바로 삭제: ① 그 로그인을 다른 계정에 연결할 때(로그인은 연결한 계정으로 옮김) ② 약관 화면의 "이미 오목판 계정이 있나요?"로 기존 계정에 들어갔으나, 기존 계정에 같은 종류(Google 또는 Apple)의 다른 로그인이 이미 있어 붙일 수 없을 때(Apple 로그인이면 Apple에 연결 해제를 요청)</td></tr>
   <tr><td>로그인 토큰</td><td>유효 기간 14일, 만료 다음 날 자동 삭제</td></tr>
   <tr><td>합쳐져 삭제된 계정의 로그인 토큰 해시</td><td>그 기기에 합쳐졌음을 알리기 위해 원래 만료일까지 보관하고, 만료 다음 날 자동 삭제(최대 약 15일)</td></tr>
   <tr><td>계정 합치기 기록 (두 계정의 내부 번호와 시각)</td><td>남는 계정이 삭제될 때까지</td></tr>
@@ -85,7 +92,7 @@
   <tr><td>신고 기록</td><td>처리 전에는 처리될 때까지, 처리(조치 또는 기각) 후 1년 (계정을 삭제해도 신고 기록은 계정과 연결되지 않은 상태로 이 기간까지 보관)</td></tr>
   <tr><td>게임 기록 (다른 이용자와의 대국)</td><td>상대방의 전적·복기 기능 유지를 위해 기간 제한 없이 보관</td></tr>
   <tr><td>온라인 A.I. 대국 기록</td><td>계정 삭제 때까지</td></tr>
-  <tr><td>레이팅 기록·시즌 기록</td><td>이용자가 계정을 삭제할 때까지</td></tr>
+  <tr><td>레이팅 기록·시즌 기록·시즌 보상</td><td>이용자가 계정을 삭제할 때까지</td></tr>
   <tr><td>서버 로그(계정 삭제 기록 등, 내부 사용자 번호만 포함)</td><td>7일</td></tr>
   <tr><td>데이터베이스 백업</td><td>최대 14일</td></tr>
 </table></div>
@@ -104,7 +111,7 @@
   <li>진행 중인 대국이 있으면 기권 처리됩니다.</li>
   <li>다른 이용자와 둔 대국 중 이미 종료된 대국의 기록(착수 기록, 결과)은 <strong>상대방 이용자의 전적과 복기 기능을 유지하기 위해 보존</strong>되며, 삭제된 계정과의 연결은 끊어져 "탈퇴한 사용자"로 표시됩니다.</li>
   <li>온라인 A.I. 대국 기록은 <strong>즉시 삭제</strong>됩니다.</li>
-  <li>랭킹·레이팅 기록·시즌 기록도 함께 지워집니다(상대방의 레이팅은 바뀌지 않습니다).</li>
+  <li>랭킹·레이팅 기록·시즌 기록·시즌 보상도 함께 지워집니다(상대방의 레이팅은 바뀌지 않습니다).</li>
   <li>계정 삭제 웹 페이지에서 Google 또는 Apple 로그인만 하고 삭제를 완료하지 않으면, 닉네임이 없는 계정이 만들어진 채 <strong>최대 24시간</strong> 남았다가 자동으로 삭제됩니다.</li>
   <li>삭제는 되돌릴 수 없습니다. 삭제 후 같은 Google 또는 Apple 계정으로 다시 로그인하면 새 계정이 생성되며 이전 전적은 이어지지 않습니다.</li>
   <li>백업본에 남아 있는 데이터는 최대 14일 이내에 삭제됩니다.</li>
@@ -123,7 +130,7 @@
   <tr><td>이전받는 자 (연락처)</td><td>Fly.io, Inc. (support@fly.io, 제목 "Privacy Concerns")</td></tr>
   <tr><td>이전 국가</td><td>미국 (버지니아주)</td></tr>
   <tr><td>이전 일시·방법</td><td>온라인 모드 이용 시 네트워크를 통해 수시 전송</td></tr>
-  <tr><td>이전 항목</td><td>Google·Apple 계정 식별자, 닉네임, 게임 기록, 레이팅 기록, 로그인 토큰(해시), Apple 로그인 토큰(암호화)</td></tr>
+  <tr><td>이전 항목</td><td>Google·Apple 계정 식별자, 닉네임, 게임 기록, 레이팅 기록(시즌 기록·시즌 보상 포함), 로그인 토큰(해시), Apple 로그인 토큰(암호화)</td></tr>
   <tr><td>이용 목적</td><td>서버·데이터베이스 호스팅</td></tr>
   <tr><td>보유 기간</td><td>위 "보관 및 파기"의 기간과 같음</td></tr>
   <tr><td>거부 방법</td><td>온라인 모드를 이용하지 않으면 전송되지 않습니다. 오프라인 모드는 계속 이용할 수 있습니다</td></tr>
@@ -223,7 +230,7 @@
 
 <h2>13. 이용자의 권리</h2>
 <ul>
-  <li>온라인 모드: 앱 안에서 자신의 정보(닉네임, 전적, 레이팅·순위, 연결된 로그인 수단)를 열람할 수 있고, 닉네임을 변경할 수 있으며, "계정 및 데이터 삭제" 항목의 경로로 계정과 데이터의 삭제를 요청할 수 있습니다.</li>
+  <li>온라인 모드: 앱 안에서 자신의 정보(닉네임, 전적, 레이팅·순위, 시즌 기록·시즌 보상, 연결된 로그인 수단)를 열람할 수 있고, 닉네임을 변경할 수 있으며, "계정 및 데이터 삭제" 항목의 경로로 계정과 데이터의 삭제를 요청할 수 있습니다.</li>
   <li>기기에 저장된 정보는 앱 삭제 또는 앱 데이터 삭제로 지울 수 있습니다.</li>
   <li>광고와 관련된 데이터는 "광고 (Google AdMob)" 항목의 방법과 Google의 안내에 따라 관리할 수 있습니다.</li>
   <li>그 밖의 열람·정정·삭제 요청은 아래 문의처로 보내 주세요.</li>
@@ -231,6 +238,7 @@
 
 <h2>14. 방침 변경</h2>
 <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
+<p>이전 시행일: 2026년 9월 29일, 2026년 10월 22일, 2026년 10월 28일</p>
 
 <h2>15. 문의</h2>
 <p>khgkjg12 · khgkjg12dev@gmail.com</p>
@@ -240,7 +248,7 @@
 
 <section id="en" lang="en">
 <h1>Gomoku Board Privacy Policy</h1>
-<p>Effective date: October 28, 2026</p>
+<p>Effective date: November 10, 2026</p>
 <p>khgkjg12 ("the developer") respects the privacy of users of the Android and iOS apps "Gomoku Board" ("the app"). This policy explains what information the app handles and how.</p>
 
 <h2>1. Online and offline modes</h2>
@@ -260,7 +268,7 @@
   <tr><td>Apple sign-in token (iOS, Android, web, stored encrypted)</td><td>When you sign in with Apple</td><td>Used only to ask Apple to revoke the sign-in (unlink this app) when you delete your account</td></tr>
   <tr><td>Nickname</td><td>Entered by you</td><td>Shown in the room list, match screen and profile</td></tr>
   <tr><td>Game records (moves, result, timestamps)</td><td>When you play an online match (including online A.I. matches)</td><td>Running the match, providing records and replays</td></tr>
-  <tr><td>Rating records (skill rating changes per match, season results)</td><td>When a 15-second match (with a person or the online A.I.) ends, and when a season ends</td><td>Providing rankings and skill ratings</td></tr>
+  <tr><td>Rating records (skill rating changes per match, season results, season rewards)</td><td>When a 15-second match (with a person or the online A.I.) ends, and when a season ends</td><td>Providing rankings and skill ratings; showing season records and season rewards</td></tr>
   <tr><td>Sign-in tokens</td><td>When you sign in</td><td>Keeping you signed in</td></tr>
   <tr><td>Terms of service consent</td><td>When you accept the terms</td><td>Confirming consent</td></tr>
   <tr><td>Block list</td><td>When you block another player</td><td>Hiding that player's rooms and restricting joins</td></tr>
@@ -269,8 +277,15 @@
 <ul>
   <li><strong>We do not store your email address or any password.</strong> Sign-in happens only through your Google account (Android, iOS, web) or your Apple account (iOS, Android, web). When you sign in, the app sends the sign-in token (ID token) issued by Google or Apple to our server; this token may contain that account's email address, name and profile picture URL. Our server checks that the token is genuine and stores only the account identifier in it; it does not use or store your email address, name or profile picture URL, and discards the token once the check is done. The account identifier contains neither your email address nor your name.</li>
   <li><strong>Sign in with Apple (iOS, Android, web):</strong> an Apple account and a Google account start out as separate accounts (see "Linking sign-ins and merging accounts" below). When you sign in with Apple, our server exchanges the one-time authorization code received by the app for a sign-in token at Apple's server and stores that token encrypted. The token is used only to ask Apple to revoke the sign-in (unlink this app) when you delete your account; it is not used or read for any other purpose. If you use Apple's "Hide My Email", our server does not store the relay email address either. On Android, the Apple sign-in screen opens in a browser window. When Apple sends the sign-in result (a one-time authorization code and sign-in token) to our server, the server keeps it for at most 3 minutes, hands it to the app, and deletes it.</li>
-  <li><strong>Linking sign-ins and merging accounts:</strong> you can link both a Google sign-in and an Apple sign-in to one account. When you link one, we store that sign-in's account identifier on this account. If you have two accounts, you can ask to merge them into one. Merging moves the other account's game records, reports, block list and sign-ins to the account you keep and immediately deletes the other account (including its nickname). Merging cannot be undone. After a merge, other players' game records show the kept account's nickname.</li>
-  <li><strong>Rankings:</strong> in the online rankings, other players can see your nickname, rating (skill rating), tier, rank, season win rate (including your win rates as Black and as White) and number of games, and your online A.I. win rate. Rankings start over every 3-month season, and the final ranks of past seasons are kept as records. Suspended accounts are not shown in the rankings. If you delete your account, you are removed from the rankings, rating records and season records (your opponents' ratings do not change).</li>
+  <li><strong>Linking sign-ins and merging accounts:</strong> you can link both a Google sign-in and an Apple sign-in to one account. When you link one, we store that sign-in's account identifier on this account. If there is an account that was only signed in to with that sign-in and has not accepted the terms, we delete that account immediately and link the sign-in to this account. If you have two accounts, you can ask to merge them into one. Merging moves the other account's game records, reports, block list, season rewards, season records for seasons the kept account has no record of, and sign-ins to the account you keep, and immediately deletes the other account (including its nickname). If both accounts have a season reward for the same season, only one is kept. Merging cannot be undone. After a merge, other players' game records show the kept account's nickname.</li>
+  <li><strong>Rankings and season records:</strong> rankings start over every 3-month season. When a season ends, we keep your final tier, rating and rank for that season as a season record, and give display rewards such as badges and borders based on the final tier and rating rank (not paid products or items). Other players can see:
+    <ul>
+      <li>Rankings (current and past seasons): your nickname, rating (skill rating), tier, rank, season win rate (including your win rates as Black and as White) and number of games, and your online A.I. win rate</li>
+      <li>Room list: the host's rating and tier (shown as in placement while in placement)</li>
+      <li>Profile: your game record, this season's rating, tier, rank and top percentage, and a season record for each ended season (final tier, rating, rank and top percentage, number of games, peak rating, win-rate rank and win rate, online A.I. win-rate rank and win rate)</li>
+      <li>Season rewards: the badge and border you received for the previous season are shown on your profile, in the room list and in the rankings, and your profile also shows your rank in that season and how many players were ranked. Rewards from earlier seasons are shown in the season records on your profile.</li>
+    </ul>
+    While your account is suspended, you are not shown in the rankings (current or past seasons), and this season's values, past season records and season rewards on your profile are visible only to you. If you are still in placement or suspended when a season ends, you get no rank or reward for that season. If you delete your account, you are removed from the rankings, rating records, season records and season rewards (your opponents' ratings do not change).</li>
   <li><strong>App information sent to the server:</strong> in online mode, the app sends the app type and build number (android/build number or ios/build number) to our server. It is used to check that the app version works with the server and to show update notices; the device model, device identifiers and advertising ID are not sent.</li>
   <li>You choose your nickname yourself; we do not import the name on your Google or Apple account.</li>
   <li>Quick chat (in the waiting room, during a match, and for a short time after a match ends) lets you pick one of a set of predefined phrases. The chosen phrase is passed through our server to your opponent and is not stored or logged on our server.</li>
@@ -282,7 +297,7 @@
   <tr><th>Data</th><th>Retention</th></tr>
   <tr><td>Account (identifier, nickname)</td><td>Until you delete your account</td></tr>
   <tr><td>Apple sign-in token (iOS, Android, web, stored encrypted)</td><td>Until you delete your account (deleted after asking Apple to revoke it)</td></tr>
-  <tr><td>Accounts that have never set a nickname</td><td>24 hours after creation, then deleted automatically</td></tr>
+  <tr><td>Accounts that have never set a nickname</td><td>24 hours after creation, then deleted automatically. An account that was only signed in to and has not accepted the terms is deleted immediately, even before then, when: (1) its sign-in is linked to another account (the sign-in moves to that account), or (2) you use "Already have a Gomoku Board account?" on the terms screen to sign in to an existing account, but the sign-in cannot be added because the existing account already has a different sign-in of the same kind (Google or Apple) (for an Apple sign-in, we ask Apple to revoke it)</td></tr>
   <tr><td>Sign-in tokens</td><td>Valid for 14 days; deleted automatically the day after they expire</td></tr>
   <tr><td>Sign-in token hashes of an account deleted by a merge</td><td>Kept until they would have expired, to tell that device the account was merged, and deleted automatically the day after expiry (up to about 15 days)</td></tr>
   <tr><td>Account merge records (internal numbers of the two accounts and the time)</td><td>Until the kept account is deleted</td></tr>
@@ -290,7 +305,7 @@
   <tr><td>Reports</td><td>Until handled, then 1 year after the report is handled (actioned or dismissed); kept unlinked from the account if the account is deleted</td></tr>
   <tr><td>Game records (matches with other players)</td><td>Kept without a time limit so that your opponents keep their records and replays</td></tr>
   <tr><td>Online A.I. match records</td><td>Until you delete your account</td></tr>
-  <tr><td>Rating and season records</td><td>Until you delete your account</td></tr>
+  <tr><td>Rating records, season records and season rewards</td><td>Until you delete your account</td></tr>
   <tr><td>Server logs (e.g. deletion records, containing only an internal user number)</td><td>7 days</td></tr>
   <tr><td>Database backups</td><td>Up to 14 days</td></tr>
 </table></div>
@@ -309,7 +324,7 @@
   <li>Any match in progress is resigned on your behalf.</li>
   <li>Records of finished matches with other players (moves, result) are <strong>kept so that your opponents keep their records and replays</strong>. They are unlinked from your deleted account and shown as "deleted user".</li>
   <li>Online A.I. match records are <strong>deleted immediately</strong>.</li>
-  <li>Your rankings, rating records and season records are deleted too (your opponents' ratings do not change).</li>
+  <li>Your rankings, rating records, season records and season rewards are deleted too (your opponents' ratings do not change).</li>
   <li>If you only sign in on the account deletion web page without completing the deletion, an account with no nickname is created and is deleted automatically within <strong>24 hours</strong>.</li>
   <li>Deletion cannot be undone. If you sign in again later with the same Google or Apple account, a new account is created and your previous records are not carried over.</li>
   <li>Copies in backups are removed within 14 days.</li>
@@ -328,7 +343,7 @@
   <tr><td>Recipient (contact)</td><td>Fly.io, Inc. (support@fly.io, subject "Privacy Concerns")</td></tr>
   <tr><td>Country</td><td>United States (Virginia)</td></tr>
   <tr><td>When and how</td><td>Transmitted over the network whenever you use online mode</td></tr>
-  <tr><td>Data</td><td>Google and Apple account identifiers, nickname, game records, rating records, sign-in tokens (hashed), Apple sign-in token (encrypted)</td></tr>
+  <tr><td>Data</td><td>Google and Apple account identifiers, nickname, game records, rating records (including season records and season rewards), sign-in tokens (hashed), Apple sign-in token (encrypted)</td></tr>
   <tr><td>Purpose</td><td>Server and database hosting</td></tr>
   <tr><td>Retention</td><td>Same as "Retention and deletion" above</td></tr>
   <tr><td>How to refuse</td><td>Do not use online mode; offline modes remain available</td></tr>
@@ -428,7 +443,7 @@
 
 <h2>13. Your rights</h2>
 <ul>
-  <li>Online mode: you can view your own information (nickname, records, rating and rank, linked sign-ins) in the app, change your nickname, and request deletion of your account and data through the paths under "Deleting your account and data".</li>
+  <li>Online mode: you can view your own information (nickname, records, rating and rank, season records and season rewards, linked sign-ins) in the app, change your nickname, and request deletion of your account and data through the paths under "Deleting your account and data".</li>
   <li>Data stored on your device can be removed by uninstalling the app or clearing its data.</li>
   <li>Advertising data can be managed as described under "Advertising (Google AdMob)" and in Google's documentation.</li>
   <li>For any other request to access, correct or delete your data, please use the contact below.</li>
@@ -436,6 +451,7 @@
 
 <h2>14. Changes</h2>
 <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+<p>Previous effective dates: September 29, 2026; October 22, 2026; October 28, 2026</p>
 
 <h2>15. Contact</h2>
 <p>khgkjg12 · khgkjg12dev@gmail.com</p>
